@@ -1,0 +1,18 @@
+additionalProperties:
+    formFields:
+        - default: 8001
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: HTTP WebUI Port
+          labelZh: HTTP 网页端口
+          required: true
+          rule: paramPort
+          type: number
+        - default: WebApplication.dll
+          edit: true
+          envKey: PANEL_APP_NAME
+          labelEn: 需要运行的应用程序
+          labelZh: 需要运行的应用程序
+          required: true
+          type: text
+

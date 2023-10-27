@@ -1,0 +1,36 @@
+additionalProperties:
+    formFields:
+        - envKey: PANEL_APP_PORT_HTTP
+          labelEn: HTTP WebUI Port
+          labelZh: HTTP 网页端口
+          default: 8001
+          edit: true
+          required: true
+          rule: paramPort
+          type: number
+        - envKey: PANEL_APP_VERSION
+          labelEn: NET Version
+          labelZh: NET 版本
+          default: ".NET 7.0"
+          edit: true
+          required: true
+          type: select
+          values:
+          - label: ".NET 7.0"
+            value: "7.0"
+          - label: ".NET 6.0"
+            value: "6.0"
+          - label: ".NET 5.0"
+            value: "5.0"
+          - label: ".NET Core 3.1"
+            value: "3.1"
+          - label: ".NET Core 2.1"
+            value: "2.1"
+        - envKey: PANEL_APP_NAME
+          labelEn: Run App Name
+          labelZh: 需要运行的应用程序
+          default: WebApplication.dll
+          edit: true
+          required: true
+          type: text
+
